@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BarHuntV2</string>
+    <string name="fb_app_id">2042087386066751</string>
+    <string name="fb_login_protocol_scheme">fb2042087386066751</string>
+</resources>

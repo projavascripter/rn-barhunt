@@ -1,0 +1,61 @@
+  //notes on regular expressions and regex
+  //regex meta characters
+  // \d any number 0-9 
+  // \w A-Z, a-z, 0-9 any word component
+  // \W anything that is not a word
+  // \s whitespace
+  // \S any thing that is not white space
+  // . any character whatsoever
+  // \. a literal period, \/ a literal forward slash
+
+  //regex quantifiers
+  // * 0 or more
+  // + 1 0r more
+  // ? 0 or 1
+  // {min, max}
+  // {n}
+
+  //position
+  // ^ begining of line
+  // $ end of line
+  // \b word boundry
+
+  //character clases
+  // [abc] [-.]
+  // [a-f] any character a through f
+  // [^0-5] any character not 0-5
+
+  //alternation
+  // (net|com) net or com 
+
+  //capturing groups
+  // () are used to identify groups
+  // $0 is the whole string, $1 is the first group
+  // \(?\d{3}[).-]\d{3}[./]\d{4} replace with $1-XXX-XXXX
+  // (\w+),\s(\w+) replace with $2 $1, flips names from Shifman, Daniel to Daniel Shifman
+
+  //finding double words aka back reference
+  // (\w+)\s\1 
+
+  //examples
+  // \b\w{5}\b all 5 letter words 
+  // colou?rs? colors with an optional 'u' and 's'
+  // \d{3}[.-]\d{3}[./]\d{4} find any phone number 407-808.5423 (407)808.5423
+  // \(?(\d{3})[).-]\d{3}[./]\d{4}
+  // \(?\d{3}[).-]\d{3}[./]\d{4} replace with $1-XXX-XXXX
+  // [\w.]+@\w\.(net|com|edu|org) any email address
+  // \[.*\] a bracket followed by anything followed by a closed bracket Greedy goes to end of line
+  // \[.*?\] makes star non greedy
+
+  //javascript
+  // var r = /hello/ is a regex while var s = "hello" is not
+  // r.test("123ABC") returns true or false if the string contains the right regular expression
+  // s.match(/[a-z]+/g) returns the matching text
+  // while (var result = r.exec(s)) {do something;}
+  // s.split(/\s/) the same as explode, splits up into words
+  // s.split(/[,\s/]+/) splits based on all spaces and commas
+  // can pass a function into replace and have it return something
+
+  //flags
+  // /g -> global
+  // /i -> case insenstive

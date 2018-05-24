@@ -1,0 +1,45 @@
+in the observer
+  update the filtered users list
+
+when click on a challenge box
+	pass challenge obj, challenge pack id, allplayers except user self to the modal
+	set up challengeCompletionModalData:
+	show the modal by setState
+  update filtered users list
+
+	render title, text,
+	background color based type
+	number of completion spots based maxCompletions
+		(next) inside the spots, render points, from maxPoints --> 1
+  render a flatlist:
+    each row is a player
+    not show users that already in the winners list
+
+	spots:
+		begining: + ? ?
+		click on +
+			show a modal that display players who haven't completed this challenge in the hunt
+			select a player
+			mark the player has completed the challenge
+				add completion to completionts/$huntId/
+				completion: {
+					challengeId 
+					challengePackId (got from GameView)
+					playerId
+					timeStamp 2018-03-11T15:22:53Z
+				}
+      update the users completed state
+		check if there are existing completions for this challenge in this hunt:
+			at completions/$huntId:
+			get the array of all completions for this huntId
+			completionsForCurrentChallenge = filter/get those with the current challengeId
+			playersCompleted = get user obj for each playerId in completionsForCurrentChallenge
+			render in box
+				use ? as background
+				render user profile images 
+				in the next available box, render +
+
+    in user list, click on self
+      say "Sorry but you are not allowed to verify completion challenges or tournaments for yourself. Please find or make a friend who is also playing to verify this challenge for you. 
+
+refresh user list too when db is updated

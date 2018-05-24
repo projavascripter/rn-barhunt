@@ -1,0 +1,13 @@
+Step 1: Add the font to Fonts Used
+Step 2: Add a reference to the font in react native
+Step 3: Drag the font into the left hand side of the xcode project
+Step 4: add the font to the plist
+Step 5: go to project setting, then the build phases and add the font to copy bundle resources
+Step 6: uncomment the code in appdelgate.m
+Step 7: Get the list of font families from the Xcode terminal/debugger
+Step 8: delete the reference in left hand of Xcode (project navigator)
+Step 9: rename the file in fonts used
+Step 10: Drag the font into the left hand side of the xcode project
+Step 11: add the font to the plist
+Step 12: go to project setting, then the build phases and add the font to copy bundle resources
+

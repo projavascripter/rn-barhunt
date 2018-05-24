@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "472107255951",
+    "firebase_url": "https://barhuntv2.firebaseio.com",
+    "project_id": "barhuntv2",
+    "storage_bucket": "barhuntv2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472107255951:android:554d3ee145487e7a",
+        "android_client_info": {
+          "package_name": "com.barhuntv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472107255951-er34nee1jphbkd7n8ct0etul82tkaphk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.barhuntv2",
+            "certificate_hash": "b5e314e22c781a2d3bf4ef4c12e4efc3296afdd4"
+          }
+        },
+        {
+          "client_id": "472107255951-rf78ureqkdmpk9nu55k6jk70guleqpar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.barhuntv2",
+            "certificate_hash": "3f2358f3ac71f9220d361485fd344b4a15d907e5"
+          }
+        },
+        {
+          "client_id": "472107255951-0tdfl6pp1tc67mlgkcvrt5dt3cjtatqq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "472107255951-q9llbl802q7pi0lstc34etjil5526and.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBigAMjqi5vHH8Wl3Ic3FfkMGmVzdX0yB8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472107255951-0tdfl6pp1tc67mlgkcvrt5dt3cjtatqq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
